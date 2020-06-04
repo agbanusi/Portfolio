@@ -1,0 +1,335 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style type="text/css">
+    body{
+      margin:0px;
+      width:100%;
+      background-color: #be3144;
+    }
+		.body{
+      width:100%;
+      margin:0px;
+			display: flex;
+			flex-direction: column;
+			
+		}
+    .navlink{
+			position: fixed;
+			width: 100%;
+      margin:0px;
+			background-color: #be3144;
+			height: 70px;
+			top: 0px;
+		}
+		.first{
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			padding-right:25px;
+			margin-right:10px;
+
+		}
+		
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		.first li{
+			margin: 0 10px 0 10px;
+			font-size: 28px;
+		}
+		.first li:hover{
+			background-color: #13daec;
+			opacity: 0.7;
+		}
+		.block{
+      width:100%;
+      margin:0px;
+			display: flex;
+			flex-direction: column;
+		}
+		.start{
+			width: 100%;
+			background-color: rgb(45,45,45);
+			height: 70vh;
+			text-align: center;
+      display:grid;
+      justify-items:center;
+		}
+		.a{
+			font-size: 4rem;
+      margin-top:30vh;
+			font-family: 'Fira Sans Extra Condensed', sans-serif;
+			font-weight: 500;
+			color: white;
+		}
+		
+		.b {
+			margin-top: 40vh;     
+			font-size: 2rem;
+			font-weight: 200;
+			font-style: italic;
+			font-family: 'Kaushan Script', cursive;
+			color:#be3144;
+			animation-name: let;
+			animation-duration: 2.5s;
+			animation-timing-function: cubic-bezier(0.3, 0.4, 0.5, 1.6);
+			animation-iteration-count: infinite;
+		}
+		@keyframes let{
+			100%{
+				margin-top: 0rem;
+			}
+		}	
+		.show {
+    	width:100%;
+      margin:0px;
+      background-color: #45567D;
+			text-align: center;
+		}
+		.top{
+      margin-top:1rem;
+			font-size: 40px;
+			color: white;
+			padding-top: 30px;
+		}
+		.pics {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+      place-items:center;
+			height:100%;
+      width:100%;
+		}
+		.frontend,.backend,.visual{
+      width:100%;
+      height:100%;
+			display: grid;
+      grid-template-rows: 1fr 8fr 1fr;
+      grid-template-column:1fr;
+      justify-items:center;
+		}
+    .backend,.visual{
+      height:95%;
+      padding-top:5%;
+    }
+    .frames{
+      display:flex;
+      width:97.5%;
+      justify-content:space-between;
+
+    }
+    .frames div{
+      width:49%;
+      height:100%;
+      display: grid;
+			grid-template-rows:5fr 1fr;
+    }
+    iframe{
+			width: 100%;
+			height: 100%;
+		}
+		.frames div p{
+      margin:0px;
+      height:2.5rem;
+			background-color: rgb(45,45,45);
+      width:100%;
+		}
+    .link{
+      width:100%;
+      height:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+		button {
+			background-color:rgb(50,50,50);
+			border-width: 0px;
+      width:20%;
+      margin-bottom:2.5rem;
+			padding: 20px;
+			font-size: 18px;
+		}
+		span{
+			transition-property: color;
+		    transition-duration: 0.3s;
+		    transition-timing-function: ease-out;
+		    transition-delay: 0s;
+		    color: orange;
+		}
+		.next {
+			background-color: rgb(50,50,50);
+			text-align: center;
+			color: white;
+      display:grid;
+      place-items:center;
+		}
+		.it{
+			font-size: 20px;
+			margin-top: 0px;
+		}
+		.seen{
+			font-size: 50px;
+      margin-top:5%;
+		}
+		.next li{
+			list-style: none;
+			font-size: 25px;
+			padding: 20px;
+		}
+		.next a:hover {
+			animation-name: length;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+		}
+		@keyframes length {
+			100%{
+				font-size: 30px;
+			}
+		}
+		
+		.next ul{
+			display: flex;
+			width:100%;
+      align-content:center;
+			justify-content: center;
+		}
+		
+		footer{
+			background-color: rgb(50,50,50);
+			text-align: center;
+			height: 3rem;
+			color: white;
+			margin-top: 0.5rem;
+			font-size: 1rem;
+		}
+    
+		@media (max-width: 600px) {
+			.first{
+				justify-content: center;
+			}
+			.pics {
+			display: grid;
+			grid-template-columns: 1fr ;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+      .remove{
+        display:none;
+      }
+      .frontend,.backend,.visual{
+      width:100%;
+      height:100%;
+			display: grid;
+      grid-template-rows: 1fr 5fr 1fr;
+      grid-template-column:1fr;
+      justify-items:center;
+		}
+      .frames{
+        display:grid;
+        width:97.5%;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+      }
+			.frames div{
+				width:98%;
+			}
+			button{
+				margin-bottom: 5rem;
+        width:25%;
+			}
+			.next li{
+				font-size: 15px;
+			}
+      .next ul{
+        margin-right:52px;
+      }
+			.next a:hover {
+			animation-name: length;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+		}
+		@keyframes length {
+			100%{
+				font-size: 22px;
+				font-family: 'Dancing Script', cursive;
+			}
+		}
+		}
+
+	</style>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class='body'>
+	<div>
+	    <nav class='navlink' id='navbar'>
+			<header>
+				<ul class='first'>
+					<li><a href='#About' alt=''>About</a></li>
+					<li><a href='#projects' alt=''>Works</a></li>
+					<li><a href='#Contact' alt=''>Contact</a></li>
+				</ul>
+			</header>
+		</nav>
+	</div>
+	<div class='block' id='About'>
+	<section class='start' id='welcome-section'>
+		<h1 class='a'>Hi, I am John Agbanusi </h1>
+		<p class='b'> A full stack web developer</p>
+	</section>
+	<section class='show' id='projects'>
+		<p class='top'> <u> These are some of my projects </u></p>
+		<div class='pics'>
+      <div class='frontend'>
+        <h1> Front-End Project </h1>
+        <div class='frames'>
+		      <div class='project-tile'><a href='https://codepen.io/agbanusi/full/MWavXww' alt=''><iframe src='https://codepen.io/agbanusi/full/MWavXww'></iframe><p class='link'><span><</span> JS Calculator <span>/></span></p></a></div>
+           <div><a class='remove' href='https://codepen.io/agbanusi/full/NWGaLPv' alt=''><iframe src='https://codepen.io/agbanusi/full/NWGaLPv' ></iframe> <p class='link'><span><</span> Pomodoro Clock <span>/></span></p></a></div>
+        </div>
+        <button> <a href='https://codepen.io/agbanusi/pens/public' alt=''> Show all  > </a></button>
+      </div>
+      <div class='visual'>
+        <h1> Data Visualization </h1>
+        <div class='frames'>
+        <div><a href='https://codepen.io/agbanusi/full/Yzyjxbv' alt=''> <iframe src='https://codepen.io/agbanusi/full/Yzyjxbv' ></iframe> <p class='link'><span><</span> Code Documentation Page <span>/></span></p></a></div>
+      <div><a class='remove' href='https://codepen.io/agbanusi/full/wvKjQGp' alt=''> <iframe src='https://codepen.io/agbanusi/full/wvKjQGp'></iframe><p class='link'><span><</span> Chloropheth mapping <span>/></span></p></a></div>
+        </div>
+        <button> <a href='https://codepen.io/agbanusi/pens/public' alt=''> Show all  > </a></button>
+      </div>
+      <div class='backend'>
+        <h1> Back-End Projects </h1>
+        <div class='frames'>
+         <div><a href='https://quickest-tranquil-plutonium.glitch.me' alt=''> <iframe src='https://quickest-tranquil-plutonium.glitch.me'></iframe> <p class='link'><span><</span> Code Documentation Page <span>/></span></p></a></div>
+      <div><a class='remove' href='https://elegant-oasis.glitch.me' alt=''> <iframe src='https://elegant-oasis.glitch.me'></iframe> <p class='link'><span><</span> Survey Form <span>/></span></p></a></div>
+        </div>
+        <button> <a href='https://glitch.com/@agbanusijohn/fcc' alt=''> Show all  > </a></button>
+      </div>
+		</div>
+	</section>
+	<section class='next' id='Contact'>
+		<p class='seen'> Let's work together... </p>
+		<p class='it'> How do you take your coffee?</p>
+		<ul>
+			<li><a href='https://www.facebook.com/profile.php?id=100003566940801' target='_blank' id='profile-link'title='facebook'><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href='https://www.twitter.com/agbanusijohn' target='_blank' id='profile-link' title='twitter'><i class="fab fa-twitter"></i></a></li>
+			<li><a href='https://github.com/agbanusi' target='_blank' id='profile-link' title='Github'><i class="fab fa-github"></i></a></li>
+			<li><a href='mailto:agbanusijohn@gmail.com' target='_blank' id='profile-link' title='Send a mail'><i class="fas fa-envelope"></i></a></li>
+			<li><a href='tel:+234-807-397-5086' target='_blank' title='Call me'><i class="fas fa-phone-alt"></i></a></li>
+		</ul>
+	</section>
+	</div>
+	<footer>
+		<p>
+		© Agbanusi John
+		</p>
+	</footer>
+  </div>
+</body>
+</html>
